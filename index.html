@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Lena's</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<nav>
+			<h1>Lena's</h1>
+			<ul class="navigation">
+				<li><a href="#home" class="nav-link">About</a></li>
+				<li><a href="#menu" class="nav-link">Menu</a></li>
+				<li><a href="#appointment" class="nav-link">Appointment</a></li>
+				<li><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+			<div class="menu-burger" id="menu-burger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>
+		<section class="home" id="home">
+			<div class="slideshow-section">
+				<div class="my-slides fade">
+					<div class="numbertext">1/5</div>
+					<img src="home-nails.jpeg" alt="h-nail" loading="lazy" class="home-img">	
+				</div>
+				<div class="my-slides fade">
+					<div class="numbertext">2/5</div>
+					<img src="blue-nails.jpeg" alt="b-nail" loading="lazy" class="home-img">	
+				</div>
+				<div class="my-slides fade">
+					<div class="numbertext">3/5</div>
+					<img src="pastel-nails.jpeg" alt="p-nail" loading="lazy" class="home-img">
+				</div>
+				<div class="my-slides fade">
+					<div class="numbertext">4/5</div>
+					<img src="design-nails.jpeg" alt="d-nail" loading="lazy" class="home-img">
+				</div>
+				<div class="my-slides fade">
+					<div class="numbertext">4/5</div>
+					<img src="glitter-nails.jpeg" alt="g-nail" loading="lazy" class="home-img">
+				</div>
+				<button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="next" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			<div class="home-section">
+				<h2 class="home-title">About</h2>
+				<p class="home-text">
+					Beauty, fresh, looking nails. Lena's was created in 2004, hoping to make people feel pretty in and out. The name is actually come from one of the most important people in my life. When someone feels beautiful from the outside, maybe then they can start feeling pretty from the inside. If you want to have beautiful looking nails, come find us! We offer more than just painting nails! Come to us for nails, massage, feet, and facial!
+				</p>
+			</div>
+		</section>
+		<section class="menu" id="menu">
+			<hr/>
+			<h2 class="menu-title">Menu</h2>
+			<div class="menu-section">
+				<img src="nails-menu.jpg" alt="m-nail" loading="lazy" class="menu-img">	
+			</div>
+		</section>
+		<section class="appointment" id="appointment">
+			<hr/>
+			<h2 class="appoint-title">Appointment</h2>
+			<div class="contact-form-container">
+				<div class="contact-form">
+					<form action="https://formspree.io/f/myyoedpk" method="POST">
+						<div class="form-control">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="sender-name" placeholder="Enter your name" class="input-field" required/>
+						</div>
+						<div class="form-control">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="sender-email" placeholder="Enter your email" class="input-field" required/>
+						</div>
+						<div class="form-control">
+							<label for="message">Message</label>
+							<textarea id="message" cols="60" rows="10" name="message" placeholder="Enter your message" class="input-field" required></textarea> 
+						</div>
+						<input type="submit" value="Submit" id="submit-button" class="submit-button"/>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<hr/>
+			<h2 class="contact-title">Contact Us</h2>
+			<div class="contact-section">
+				<div class="location-info">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.963390283231!2d-118.36386414944063!3d34.07045272412295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b93092a583b1%3A0x1add56d4da3628fa!2sLena&#39;s%20Nails!5e0!3m2!1sen!2sus!4v1644433705350!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="important-info">
+					<h3 class="time-info">We Are Open</h3>
+					<p>Monday: 10am - 7pm</p>
+					<p>Tuesday: CLOSED</p>
+					<p>Wednesday: 10am - 7pm</p>
+					<p>Thursday: 10am - 7pm</p>
+					<p>Friday: 10am - 7pm</p>
+					<p>Saturday: 10am - 7pm</p>
+					<p>Sunday: 10am - 7pm</p>
+				</div>
+				<div class="misc-info">
+					<div class="phone">
+						<img src="Phone_icon.png" alt="phone" loading="lazy" class="misc-img">	
+						<p>(323) 782-1098</p>
+					</div>
+					<div class="address">
+						<img src="location-icon.png" alt="address" loading="lazy" class="misc-img">	
+						<p>359 S Fairfax Ave, Los Angeles, CA 90036</p>
+					</div>
+					<div class="email">
+						<img src="email-icon.png" alt="email" loading="lazy" class="misc-img">	
+						<p>lenasemail@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p class="copy">&copy; Copyright 2022</p>
+			<p class="copy">Built with &#x2661; by An Pho</p>
+		</footer>
+	</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
